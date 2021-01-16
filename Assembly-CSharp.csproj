@@ -36,9 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Art\Sprites\Scripts\RubyController.cs" />
-     <Compile Include="Assets\Art\Sprites\Scripts\HealthCollectable.cs" />
-     <Compile Include="Assets\Art\Sprites\Scripts\DamageableZone.cs" />
+     <Compile Include="Assets\Art\Scripts\RubyController.cs" />
+     <Compile Include="Assets\Art\Scripts\HealthCollectable.cs" />
+     <Compile Include="Assets\Art\Scripts\DamageableZone.cs" />
+     <Compile Include="Assets\Art\Scripts\EnemyController.cs" />
      <None Include="Assets\2DBeginner_Third-PartyNotice.txt" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2020.1.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4237456702111464040}
   - component: {fileID: 653155432261409506}
   - component: {fileID: 3955384064495813617}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ruby
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   moveSpeed: 5
+  timeInvincible: 2
 --- !u!50 &653155432261409506
 Rigidbody2D:
   serializedVersion: 4
