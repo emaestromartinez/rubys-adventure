@@ -358,6 +358,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5377601941569982692, guid: 36628ba3f29b746f2846d5cc67dea59a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 94cfbe5f3afbc456b84802bb7b983dd0, type: 2}
     - target: {fileID: 2055382032533101796, guid: 36628ba3f29b746f2846d5cc67dea59a, type: 3}
       propertyPath: m_Name
       value: MrRobotFast
@@ -13272,6 +13276,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7243007539720669296, guid: 2963ba1ba423a4fd2a5ce10cdf62f9d5, type: 3}
+      propertyPath: m_Size.x
+      value: 2.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: -7243007539720669296, guid: 2963ba1ba423a4fd2a5ce10cdf62f9d5, type: 3}
+      propertyPath: m_Size.y
+      value: 2.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: -7243007539720669296, guid: 2963ba1ba423a4fd2a5ce10cdf62f9d5, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7243007539720669296, guid: 2963ba1ba423a4fd2a5ce10cdf62f9d5, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7243007539720669296, guid: 2963ba1ba423a4fd2a5ce10cdf62f9d5, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7243007539720669296, guid: 2963ba1ba423a4fd2a5ce10cdf62f9d5, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7243007539720669296, guid: 2963ba1ba423a4fd2a5ce10cdf62f9d5, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7243007539720669296, guid: 2963ba1ba423a4fd2a5ce10cdf62f9d5, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: -7243007539720669296, guid: 2963ba1ba423a4fd2a5ce10cdf62f9d5, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.6666667
+      objectReference: {fileID: 0}
     - target: {fileID: 2055382032533101796, guid: 2963ba1ba423a4fd2a5ce10cdf62f9d5, type: 3}
       propertyPath: m_Name
       value: MrRobotSlow
@@ -13282,11 +13322,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6398549731861010957, guid: 2963ba1ba423a4fd2a5ce10cdf62f9d5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.63
+      value: 9.61
       objectReference: {fileID: 0}
     - target: {fileID: 6398549731861010957, guid: 2963ba1ba423a4fd2a5ce10cdf62f9d5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.65
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: 6398549731861010957, guid: 2963ba1ba423a4fd2a5ce10cdf62f9d5, type: 3}
       propertyPath: m_LocalPosition.z
