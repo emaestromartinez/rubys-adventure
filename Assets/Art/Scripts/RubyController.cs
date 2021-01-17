@@ -16,6 +16,11 @@ public class RubyController : MonoBehaviour
     bool isInvincible;
     float invincibleTimer;
 
+    private bool launchKeyPressed = false;
+
+
+    Animator animator;
+    Vector2 lookDirection = new Vector2(1, 0);
 
     void Start()
     {
@@ -23,18 +28,40 @@ public class RubyController : MonoBehaviour
 
         currentHealth = maxHealth;
 
-    }
+        animator = GetComponent<Animator>();
 
+    }
     void Update()
     {
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
+
+        Vector2 move = new Vector2(horizontal, vertical);
+
+        if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
+        {
+            lookDirection.Set(move.x, move.y);
+            lookDirection.Normalize();
+        }
+
+        animator.SetFloat("Look X", lookDirection.x);
+        animator.SetFloat("Look Y", lookDirection.y);
+        animator.SetFloat("Speed", move.magnitude);
+
 
         if (isInvincible)
         {
             invincibleTimer -= Time.deltaTime;
             if (invincibleTimer < 0)
                 isInvincible = false;
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.C))
+            {
+                launchKeyPressed = true;
+
+            }
         }
     }
 
@@ -45,6 +72,12 @@ public class RubyController : MonoBehaviour
         position.y = position.y + moveSpeed * vertical * Time.deltaTime;
 
         rigidbody2d.MovePosition(position);
+
+        if (launchKeyPressed)
+        {
+            Launch();
+            launchKeyPressed = false;
+        }
     }
 
     public void ChangeHealth(int amount)
@@ -59,7 +92,17 @@ public class RubyController : MonoBehaviour
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        Debug.Log(currentHealth + "/" + maxHealth);
+    }
+
+    public GameObject projectilePrefab;
+    void Launch()
+    {
+        GameObject projectileObject = Instantiate(projectilePrefab, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+
+        Projectile projectile = projectileObject.GetComponent<Projectile>();
+        projectile.Launch(lookDirection, 300);
+
+        animator.SetTrigger("Launch");
     }
 
 }
