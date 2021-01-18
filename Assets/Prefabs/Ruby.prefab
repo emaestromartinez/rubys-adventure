@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   moveSpeed: 5
+  smokeEffect: {fileID: 8540900013736167230, guid: 6eb7e5e610dc9419e9430da27a60f3b9, type: 3}
   timeInvincible: 2
   projectilePrefab: {fileID: 7316023714997030528, guid: b21839a19d7754a1cad3dda65f202c26, type: 3}
 --- !u!50 &653155432261409506

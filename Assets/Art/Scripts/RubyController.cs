@@ -7,6 +7,8 @@ public class RubyController : MonoBehaviour
     Rigidbody2D rigidbody2d;
     public int maxHealth = 5;
     [SerializeField] private float moveSpeed = 5;
+    [SerializeField] private ParticleSystem smokeEffect;
+
     public float timeInvincible = 2.0f;
     float horizontal;
     float vertical;

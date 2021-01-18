@@ -9,6 +9,9 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float moveSpeed = 5;
     private bool vertical;
 
+    [SerializeField] private ParticleSystem smokeEffect;
+
+
     public float changeTime = 3.0f;
     private float timer;
     private int direction = 1;
@@ -76,6 +79,7 @@ public class EnemyController : MonoBehaviour
     {
         broken = false;
         rigidbody2D.simulated = false;
+        smokeEffect.Stop();
         animator.SetTrigger("Fixed");
     }
 
