@@ -37,10 +37,11 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Art\Scripts\RubyController.cs" />
+     <Compile Include="Assets\Art\Scripts\Projectile.cs" />
      <Compile Include="Assets\Art\Scripts\HealthCollectable.cs" />
      <Compile Include="Assets\Art\Scripts\EnemyController.cs" />
      <Compile Include="Assets\Art\Scripts\DamageableZone.cs" />
-     <Compile Include="Assets\Art\Scripts\Projectile.cs" />
+     <Compile Include="Assets\Art\Scripts\UIHealthBar.cs" />
      <None Include="Assets\2DBeginner_Third-PartyNotice.txt" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2020.1.17f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -582,6 +583,9 @@
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>/Users/eduardmaestro/Documents/Unity/Ruby&apos;s Adventure/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+        <HintPath>/Users/eduardmaestro/Documents/Unity/Ruby&apos;s Adventure/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>/Users/eduardmaestro/Documents/Unity/Ruby&apos;s Adventure/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -602,6 +606,9 @@
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
         <HintPath>/Users/eduardmaestro/Documents/Unity/Ruby&apos;s Adventure/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+        <HintPath>/Users/eduardmaestro/Documents/Unity/Ruby&apos;s Adventure/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
         <HintPath>/Users/eduardmaestro/Documents/Unity/Ruby&apos;s Adventure/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>

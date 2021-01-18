@@ -7,7 +7,7 @@ public class RubyController : MonoBehaviour
     Rigidbody2D rigidbody2d;
     public int maxHealth = 5;
     [SerializeField] private float moveSpeed = 5;
-    [SerializeField] private ParticleSystem smokeEffect;
+    [SerializeField] private ParticleSystem onceSmokeEffect;
 
     public float timeInvincible = 2.0f;
     float horizontal;
@@ -89,6 +89,11 @@ public class RubyController : MonoBehaviour
             if (isInvincible)
                 return;
 
+            Instantiate(onceSmokeEffect, rigidbody2d.position, Quaternion.identity);
+            Instantiate(onceSmokeEffect, rigidbody2d.position, Quaternion.identity);
+            Instantiate(onceSmokeEffect, rigidbody2d.position, Quaternion.identity);
+            Instantiate(onceSmokeEffect, rigidbody2d.position, Quaternion.identity);
+            Instantiate(onceSmokeEffect, rigidbody2d.position, Quaternion.identity);
             isInvincible = true;
             invincibleTimer = timeInvincible;
         }
