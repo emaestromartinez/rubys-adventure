@@ -88,17 +88,14 @@ public class RubyController : MonoBehaviour
         {
             if (isInvincible)
                 return;
-
-            Instantiate(onceSmokeEffect, rigidbody2d.position, Quaternion.identity);
-            Instantiate(onceSmokeEffect, rigidbody2d.position, Quaternion.identity);
-            Instantiate(onceSmokeEffect, rigidbody2d.position, Quaternion.identity);
-            Instantiate(onceSmokeEffect, rigidbody2d.position, Quaternion.identity);
-            Instantiate(onceSmokeEffect, rigidbody2d.position, Quaternion.identity);
             isInvincible = true;
             invincibleTimer = timeInvincible;
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+
+        UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
+
     }
 
     public GameObject projectilePrefab;
